@@ -384,13 +384,14 @@ function getAuthoringAssistantUrl() {
 
   return url.toString();
 }
-
+    
 function enableAuthoringAssistantExtension() {
   const meta = document.createElement('meta');
   meta.name = 'urn:adobe:aue:config:extensions';
   //meta.content = getAuthoringAssistantUrl();
-  meta.content = 'https://localhost.corp.adobe.com:8013/resources/universal_editor.html'; 
+  //meta.content = 'https://localhost.corp.adobe.com:8013/resources/universal_editor.html'; 
  // meta.content = 'https://127.0.0.1:8013/resources/form_properties.html';
+ meta.content = 'http://localhost:4502/libs/fd/fm/gui/content/forms/af/create.html?source=dev&folderPath=/content/dam/formsanddocuments';
 
   console.log('Adding meta tag for aem forms authoring assistant extension:', meta.content);
   document.head.appendChild(meta);
