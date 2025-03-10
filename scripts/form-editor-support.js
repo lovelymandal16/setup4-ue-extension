@@ -390,10 +390,10 @@ function enableAuthoringAssistantExtension() {
   meta.name = 'urn:adobe:aue:config:extensions';
   //meta.content = getAuthoringAssistantUrl();
   //meta.content = 'https://localhost.corp.adobe.com:8013/resources/universal_editor.html'; //<<<< this is static url
-  meta.content = 'https://127.0.0.1:8013/resources/form_properties.html';
+ // meta.content = 'https://127.0.0.1:8013/resources/form_properties.html';
   //meta.content = 'https://experience-qa.adobe.com/?livecycle-forms-spa_version=PR-519-d27b873d572d6f211f558aa51cb8853f02f1cf4d&repo=author-p98711-e226383-cmstg.adobeaemcloud.com#/@908978/aem/forms/af/create';
  // meta.content = 'https://experience.adobe.com/solutions/livecycle-forms-spa/resources/form_properties.html?livecycle-forms-spa_version=PR-519-d27b873d572d6f211f558aa51cb8853f02f1cf4d&repo=author-p98711-e226383-cmstg.adobeaemcloud.com';
-
+ meta.content = 'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-521-91acb29ea1d55507733a36463fe2be35e5ffe885';
   console.log('Adding meta tag for aem forms authoring assistant extension:', meta.content);
   document.head.appendChild(meta);
 }
