@@ -395,8 +395,8 @@ function enableAuthoringAssistantExtension() {
   //meta.content = 'https://experience-qa.adobe.com/?livecycle-forms-spa_version=PR-519-d27b873d572d6f211f558aa51cb8853f02f1cf4d&repo=author-p98711-e226383-cmstg.adobeaemcloud.com#/@908978/aem/forms/af/create';
  // meta.content = 'https://experience.adobe.com/solutions/livecycle-forms-spa/resources/form_properties.html?livecycle-forms-spa_version=PR-519-d27b873d572d6f211f558aa51cb8853f02f1cf4d&repo=author-p98711-e226383-cmstg.adobeaemcloud.com';
  //meta.content = 'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-545-ae9a211a8d46f4cde193a05f5ae97d747bf73132';
- meta.content =   'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-545-2dc9f7374e13b8c42f4b3daa651e3d3e62d0a96d';
- //meta.content =   'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-545-9aa1df979f7b9971b6d022da2663969c331d8725';
+ //meta.content =   'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-545-2dc9f7374e13b8c42f4b3daa651e3d3e62d0a96d';
+ meta.content =   'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-545-5a646468d708d39643f18b05c9b61e261f23b358;
 
  console.log('Adding meta tag for aem forms authoring assistant extension:', meta.content);
   document.head.appendChild(meta);
