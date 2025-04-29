@@ -3213,7 +3213,7 @@
           {
             "component": "text",
             "name": "name",
-            "label": "Name",
+            "label": "Submit",
             "valueType": "string",
             "required": true,
             "valueFormat": "regexp",
