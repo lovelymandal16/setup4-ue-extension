@@ -1,19 +1,20 @@
-import {
-  createButton, createFieldWrapper, createLabel, getHTMLRenderType,
-  createHelpText,
-  getId,
-  stripTags,
-  checkValidation,
-  toClassName,
-  getSitePageName,
-} from './util.js';
+import { createOptimizedPicture } from '../../scripts/aem.js';
+import transferRepeatableDOM, { insertAddButton, insertRemoveButton } from './components/repeat/repeat.js';
+import { emailPattern, getSubmitBaseUrl, SUBMISSION_SERVICE } from './constant.js';
 import GoogleReCaptcha from './integrations/recaptcha.js';
 import componentDecorator from './mappings.js';
-import DocBasedFormToAF from './transform.js';
-import transferRepeatableDOM, { insertAddButton, insertRemoveButton } from './components/repeat/repeat.js';
 import { handleSubmit } from './submit.js';
-import { getSubmitBaseUrl, emailPattern } from './constant.js';
-import { createOptimizedPicture } from '../../scripts/aem.js';
+import DocBasedFormToAF from './transform.js';
+import {
+  checkValidation,
+  createButton, createFieldWrapper,
+  createHelpText,
+  createLabel, getHTMLRenderType,
+  getId,
+  getSitePageName,
+  stripTags,
+  toClassName,
+} from './util.js';
 
 export const DELAY_MS = 0;
 let captchaField;
@@ -556,7 +557,17 @@ export default async function decorate(block) {
   let rules = true;
   let form;
   if (formDef) {
-    formDef.action = getSubmitBaseUrl() + (formDef.action || '');
+    const submitProps = formDef?.properties?.['fd:submit'];
+    const actionType = submitProps?.actionName || formDef?.properties?.actionType;
+    const spreadsheetUrl = submitProps?.spreadsheet?.spreadsheetUrl || formDef?.properties?.spreadsheetUrl;
+    if (actionType === 'spreadsheet' && spreadsheetUrl) {
+      // Check if we're in an iframe and use parent window path if available
+      const iframePath = window.frameElement ? window.parent.location.pathname
+        : window.location.pathname;
+      formDef.action = SUBMISSION_SERVICE + btoa(pathname || iframePath);
+    } else {
+      formDef.action = getSubmitBaseUrl() + (formDef.action || '');
+    }
     if (isDocumentBasedForm(formDef)) {
       const transform = new DocBasedFormToAF();
       formDef = transform.transform(formDef);
