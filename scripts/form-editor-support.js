@@ -398,7 +398,7 @@ if (window.location.href.includes('cmstg')==true){
   meta.content =   'https://experience-stage.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-555-9cd420c75e1f0c33c85f8e1433f08e69acfec12e';
 }
 else{
-  meta.content =   'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-555-9cd420c75e1f0c33c85f8e1433f08e69acfec12e';
+  meta.content =   'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-554-699c2821296f0d58fa55a57238be5aa7efacaf6c';
 }
  
 
