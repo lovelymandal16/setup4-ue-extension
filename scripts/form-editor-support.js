@@ -398,7 +398,7 @@ function enableAuthoringAssistantExtension() {
 //   meta.content =   'https://experience-stage.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-554-c999b31b5b112fabe552b301eec1e2ad80d34cf7';
 // }
 // else{
-  meta.content =   'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-556-f36879e155f01b2925f0a8bf9a31aef049bbeb79';
+  meta.content =   'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-556-7693ac173c0aa85b503a4ee9c3cf73f6b3649090';
 // }
  
 
