@@ -389,17 +389,17 @@ function enableAuthoringAssistantExtension() {
   const meta = document.createElement('meta');
   meta.name = 'urn:adobe:aue:config:extensions';
   //meta.content = getAuthoringAssistantUrl();
-  //meta.content = 'https://localhost.corp.adobe.com:8013/resources/universal_editor.html?livecycle-forms-spa_version=local'; //<<<< this is static url
+  meta.content = 'https://localhost.corp.adobe.com:8013/resources/universal_editor.html?livecycle-forms-spa_version=local'; //<<<< this is static url
    //meta.content = 'https://localhost.corp.adobe.com:8013/resources/universal_editor.html?livecycle-forms-spa_version=local';
  // meta.content = 'https://localhost.corp.adobe.com:8013/resources/universal_editor.html?livecycle-forms-spa_version=local';
   //meta.content = 'https://127.0.0.1:8013/resources/form_properties.html?livecycle-forms-spa_version=local';
 
- if (window.location.href.includes('cmstg')==true){
-   meta.content =   'https://experience-stage.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-557-28a696a8cc7517c765724580d7e1b41b07de78c1';
- }
- else{
-  meta.content =   'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-557-28a696a8cc7517c765724580d7e1b41b07de78c1';
- }
+ // if (window.location.href.includes('cmstg')==true){
+ //   meta.content =   'https://experience-stage.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-557-28a696a8cc7517c765724580d7e1b41b07de78c1';
+ // }
+ // else{
+ //  meta.content =   'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-557-28a696a8cc7517c765724580d7e1b41b07de78c1';
+ // }
  
 
  console.log('Adding meta tag for aem forms authoring assistant extension:', meta.content);
