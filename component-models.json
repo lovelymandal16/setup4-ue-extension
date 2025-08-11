@@ -3541,13 +3541,13 @@
       {
         "component": "container",
         "name": "basic",
-        "label": "Basic",
+        "label": "Basic AF",
         "collapsible": false,
         "fields": [
           {
             "component": "text",
             "name": "name",
-            "label": "Name",
+            "label": "Name lovely",
             "valueType": "string",
             "required": true,
             "valueFormat": "regexp",
@@ -3571,7 +3571,7 @@
           {
             "component": "text",
             "name": "dataRef",
-            "label": "Bind reference",
+            "label": "Bind reference lovely",
             "valueType": "string"
           },
           {
