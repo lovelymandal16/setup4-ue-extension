@@ -3539,7 +3539,7 @@
     "id": "text-input",
     "fields": [
       {
-        "component": "panel",
+        "component": "container",
         "name": "component-name",
         "label": "Text Input"
       },
