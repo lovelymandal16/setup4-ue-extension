@@ -3335,7 +3335,7 @@
     "fields": [
       {
         "component": "container",
-        "name": "basic",
+        "name": "basictele",
         "label": "Basic : Telephone Input",
         "collapsible": false,
         "fields": [
