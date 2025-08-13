@@ -3541,9 +3541,7 @@
       {
         "component": "text",
         "name": "name",
-        "label": "Text Input hello",
-        "valueType": "string",
-        "required": true
+        "label": "Text Input hello"
       },
       {
         "component": "container",
