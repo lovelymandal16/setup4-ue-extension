@@ -24,6 +24,11 @@
       "id": "form-reset-button",
       "fields": [
         {
+          "component": "panel",
+          "name": "component-name",
+          "label": "Reset Button"
+        },
+        {
           "component": "container",
           "name": "basic",
           "label": "Basic",

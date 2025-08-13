@@ -60,6 +60,11 @@
     "id": "button",
     "fields": [
       {
+        "component": "container",
+        "name": "component-name",
+        "label": "Button"
+      },
+      {
         "component": "aem-content",
         "name": "link",
         "label": "Link"
@@ -368,6 +373,11 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "Button"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
@@ -487,6 +497,11 @@
   {
     "id": "checkbox-group",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Checkbox Group"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -736,6 +751,11 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "Checkbox"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
@@ -945,6 +965,11 @@
   {
     "id": "date-input",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Date Input"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -1202,6 +1227,11 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "Drop Down List"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
@@ -1422,7 +1452,7 @@
     "fields": [
       {
         "component": "container",
-        "name": "component-name-container1",
+        "name": "component-name",
         "label": "Email Input"
       },
       {
@@ -1654,6 +1684,11 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "File Attachment"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
@@ -1859,6 +1894,11 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "Fragment"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
@@ -2037,6 +2077,11 @@
     "id": "form-image",
     "fields": [
       {
+        "component": "container",
+        "name": "component-name",
+        "label": "Image"
+      },
+      {
         "component": "text",
         "name": "name",
         "label": "Name",
@@ -2074,6 +2119,11 @@
   {
     "id": "multiline-input",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Multiline Input"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -2307,17 +2357,15 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "Number Input"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
         "fields": [
-          {
-            "component": "text",
-            "name": "component-name",
-            "label": "Component Name",
-            "valueType": "string",
-            "value": "Number Input"
-          },
           {
             "component": "text",
             "name": "name",
@@ -2579,6 +2627,11 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "Panel"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
@@ -2838,6 +2891,11 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "Radio Group"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
@@ -3084,6 +3142,11 @@
     "id": "captcha",
     "fields": [
       {
+        "component": "container",
+        "name": "component-name",
+        "label": "Captcha (Invisible)"
+      },
+      {
         "component": "text",
         "name": "name",
         "label": "Name",
@@ -3095,6 +3158,11 @@
   {
     "id": "form-reset-button",
     "fields": [
+      {
+        "component": "panel",
+        "name": "component-name",
+        "label": "Reset Button"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -3217,9 +3285,14 @@
     "id": "form-submit-button",
     "fields": [
       {
+        "component": "panel",
+        "name": "component-name",
+        "label": "Submit Button"
+      },
+      {
         "component": "container",
-        "name": "Lovely",
-        "label": "Lovely",
+        "name": "basic",
+        "label": "Basic",
         "collapsible": false,
         "fields": [
           {
@@ -3339,13 +3412,13 @@
     "fields": [
       {
         "component": "container",
-        "name": "component-name-container",
+        "name": "component-name",
         "label": "Telephone Input"
       },
       {
         "component": "container",
         "name": "basic",
-        "label": "Telephone Input: Basic",
+        "label": "Basic",
         "collapsible": false,
         "fields": [
           {
@@ -3556,14 +3629,14 @@
     "id": "text-input",
     "fields": [
       {
-        "component": "panel",
+        "component": "container",
         "name": "component-name",
         "label": "Text Input"
       },
       {
         "component": "container",
         "name": "basic",
-        "label": "Text Input: Basic",
+        "label": "Basic",
         "collapsible": false,
         "fields": [
           {
@@ -3793,6 +3866,11 @@
   {
     "id": "plain-text",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Text"
+      },
       {
         "component": "text",
         "name": "name",

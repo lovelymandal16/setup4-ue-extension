@@ -33,6 +33,11 @@
             "fields": [
                 {
                     "component": "container",
+                    "name": "component-name",
+                    "label": "Radio Group"
+                },
+                {
+                    "component": "container",
                     "name": "basic",
                     "label": "Basic",
                     "collapsible": false,
