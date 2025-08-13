@@ -3409,18 +3409,18 @@
   },
   {
     "id": "telephone-input",
-    "fields": [
-      {
-        "component": "container",
-        "name": "component-name",
-        "label": "Telephone Input"
-      },
+    "fields": [    
       {
         "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
         "fields": [
+          {
+            "component": "container",
+            "name": "component-name",
+            "label": "Telephone Input"
+          },
           {
             "component": "text",
             "name": "name",
