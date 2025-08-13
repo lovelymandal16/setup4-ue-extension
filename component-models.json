@@ -3539,9 +3539,9 @@
     "id": "text-input",
     "fields": [
       {
-        "component": "text",
-        "name": "name",
-        "label": "Text Input hello"
+        "component": "panel",
+        "name": "component-name",
+        "label": "Text Input"
       },
       {
         "component": "container",
