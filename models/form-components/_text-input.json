@@ -25,7 +25,7 @@
                 {
                     "component": "text",
                     "name": "name",
-                    "label": "Text Input",
+                    "label": "Text Input hello",
                     "valueType": "string",
                     "required": true
                 },

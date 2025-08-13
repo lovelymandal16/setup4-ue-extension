@@ -3206,14 +3206,14 @@
     "fields": [
       {
         "component": "container",
-        "name": "Sumbit l",
-        "label": "Submit Lovely",
+        "name": "Lovely",
+        "label": "Lovely",
         "collapsible": false,
         "fields": [
           {
             "component": "text",
             "name": "name",
-            "label": "Submit",
+            "label": "Name",
             "valueType": "string",
             "required": true,
             "valueFormat": "regexp",
@@ -3539,9 +3539,16 @@
     "id": "text-input",
     "fields": [
       {
+        "component": "text",
+        "name": "name",
+        "label": "Text Input hello",
+        "valueType": "string",
+        "required": true
+      },
+      {
         "component": "container",
         "name": "basic",
-        "label": "Basic AF",
+        "label": "Basic",
         "collapsible": false,
         "fields": [
           {
