@@ -18,6 +18,8 @@
                                 "Item 1",
                                 "Item 2"
                             ],
+                            "enabled": true,
+                            "visible": true,
                             "orientation": "horizontal"
                         }
                     }
@@ -29,6 +31,11 @@
         {
             "id": "radio-group",
             "fields": [
+                {
+                    "component": "container",
+                    "name": "component-name",
+                    "label": "Radio Group"
+                },
                 {
                     "component": "container",
                     "name": "basic",

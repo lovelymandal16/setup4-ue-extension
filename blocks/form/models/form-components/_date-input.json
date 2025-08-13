@@ -1,7 +1,7 @@
 {
     "definitions": [
         {
-            "title": "Date Input",
+            "title": "Date Picker",
             "id": "date-input",
             "plugins": {
                 "xwalk": {
@@ -9,7 +9,9 @@
                         "resourceType": "core/fd/components/form/datepicker/v1/datepicker",
                         "template": {
                             "jcr:title": "Date Input",
-                            "fieldType": "date-input"
+                            "fieldType": "date-input",
+                            "enabled": true,
+                            "visible": true
                         }
                     }
                 }
@@ -22,20 +24,15 @@
             "fields": [
                 {
                     "component": "container",
+                    "name": "component-name",
+                    "label": "Date Input"
+                },
+                {
+                    "component": "container",
                     "name": "basic",
                     "label": "Basic",
                     "collapsible": false,
-                    "fields": [
-                        {
-                            "...": "../form-common/_basic-input-placeholder-fields.json#/fields"
-                        },
-                        {
-                            "component": "date-time",
-                            "name": "default",
-                            "label": "Default Value",
-                            "valueType": "date"
-                        }
-                    ]
+                    "...": "../form-common/_basic-input-placeholder-fields.json"
                 },
                 {
                     "...": "../form-common/_help-container.json"

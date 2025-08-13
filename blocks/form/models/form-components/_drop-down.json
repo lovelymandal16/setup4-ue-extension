@@ -10,15 +10,8 @@
             "template": {
               "jcr:title": "Drop Down List",
               "fieldType": "drop-down",
-              "enum": [
-                "0",
-                "1"
-              ],
-              "enumNames": [
-                "Item 1",
-                "Item 2"
-              ],
-              "type": "string"
+              "enabled": true,
+              "visible": true
             }
           }
         }
@@ -29,6 +22,11 @@
     {
       "id": "drop-down",
       "fields": [
+        {
+          "component": "container",
+          "name": "component-name",
+          "label": "Drop Down List"
+        },
         {
           "component": "container",
           "name": "basic",
@@ -43,7 +41,6 @@
               "label": "Data type of submitted value",
               "name": "type",
               "valueType": "string",
-              "value": "number",
               "options": [
                 {
                   "name": "String",

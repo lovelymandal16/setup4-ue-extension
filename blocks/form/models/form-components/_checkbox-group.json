@@ -18,8 +18,9 @@
                                 "Item 1",
                                 "Item 2"
                             ],
-                            "orientation": "horizontal",
-                            "type": "string[]"
+                            "visible": true,
+                            "enabled": true,
+                            "orientation": "horizontal"
                         }
                     }
                 }
@@ -30,6 +31,11 @@
         {
             "id": "checkbox-group",
             "fields": [
+                {
+                    "component": "container",
+                    "name": "component-name",
+                    "label": "Checkbox Group"
+                },
                 {
                     "component": "container",
                     "name": "basic",
@@ -60,19 +66,18 @@
                             "label": "Data type of submitted value",
                             "name": "type",
                             "valueType": "string",
-                            "value": "string[]",
                             "options": [
                                 {
                                     "name": "String",
-                                    "value": "string[]"
+                                    "value": "string"
                                 },
                                 {
                                     "name": "Boolean",
-                                    "value": "boolean[]"
+                                    "value": "boolean"
                                 },
                                 {
                                     "name": "Number",
-                                    "value": "number[]"
+                                    "value": "number"
                                 }
                             ]
                         },

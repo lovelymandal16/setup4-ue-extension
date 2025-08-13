@@ -18,8 +18,9 @@
                                 "application/pdf"
                             ],
                             "buttonText": "Attach",
-                            "dragDropText": "Drag and Drop To Upload",
-                            "type": "file"
+                            "type": "file",
+                            "enabled": true,
+                            "visible": true
                         }
                     }
                 }
@@ -32,22 +33,15 @@
             "fields": [
                 {
                     "component": "container",
+                    "name": "component-name",
+                    "label": "File Attachment"
+                },
+                {
+                    "component": "container",
                     "name": "basic",
                     "label": "Basic",
                     "collapsible": false,
                     "...": "../form-common/_basic-input-fields.json"
-                },
-                {
-                    "component": "text",
-                    "name": "buttonText",
-                    "label": "Button Title",
-                    "valueType": "string"
-                },
-                {
-                "component": "richtext",
-                "name": "dragDropText",
-                "label": "Drag Drop Text",
-                "valueType": "string"
                 },
                 {
                     "...": "../form-common/_help-container.json"
@@ -59,7 +53,7 @@
                     "collapsible": true,
                     "fields": [
                         {
-                            "...": "../form-common/_basic-validation-fields.json#/fields"
+                            "...": "../form-common/_script-validation-fields.json#/fields"
                         },
                         {
                             "component": "number",

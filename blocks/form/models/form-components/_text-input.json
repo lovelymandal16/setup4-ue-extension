@@ -9,7 +9,9 @@
                         "resourceType": "core/fd/components/form/textinput/v1/textinput",
                         "template": {
                             "jcr:title": "Text Input",
-                            "fieldType": "text-input"
+                            "fieldType": "text-input",
+                            "enabled": true,
+                            "visible": true
                         }
                     }
                 }
@@ -22,15 +24,17 @@
             "fields": [
                 {
                     "component": "container",
+                    "name": "component-name",
+                    "label": "Text Input"
+                },
+                {
+                    "component": "container",
                     "name": "basic",
                     "label": "Basic",
                     "collapsible": false,
                     "fields": [
                         {
                             "...": "../form-common/_basic-input-placeholder-fields.json#/fields"
-                        },
-                        {
-                            "...": "../form-common/_basic-input-default-value-fields.json#/fields"
                         },
                         {
                             "component": "boolean",

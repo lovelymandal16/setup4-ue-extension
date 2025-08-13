@@ -9,7 +9,9 @@
             "resourceType": "core/fd/components/form/telephoneinput/v1/telephoneinput",
             "template": {
               "jcr:title": "Telephone Input",
-              "fieldType": "text-input"
+              "fieldType": "text-input",
+              "enabled": true,
+              "visible": true
             }
           }
         }
@@ -22,17 +24,15 @@
       "fields": [
         {
           "component": "container",
+          "name": "component-name",
+          "label": "Telephone Input"
+        },
+        {
+          "component": "container",
           "name": "basic",
           "label": "Basic",
           "collapsible": false,
-          "fields": [
-            {
-              "...": "../form-common/_basic-input-placeholder-fields.json#/fields"
-            },
-            {
-              "...": "../form-common/_basic-input-default-value-fields.json#/fields"
-            }
-          ]
+          "...": "../form-common/_basic-input-placeholder-fields.json"
         },
         {
           "...": "../form-common/_help-container.json"

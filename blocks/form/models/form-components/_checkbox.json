@@ -10,7 +10,9 @@
                         "template": {
                             "jcr:title": "Checkbox",
                             "fieldType": "checkbox",
-                            "checkedValue": "on"
+                            "checkedValue": "on",
+                            "enabled": true,
+                            "visible": true
                         }
                     }
                 }
@@ -21,6 +23,11 @@
         {
             "id": "checkbox",
             "fields": [
+                {
+                    "component": "container",
+                    "name": "component-name",
+                    "label": "Checkbox"
+                },
                 {
                     "component": "container",
                     "name": "basic",
@@ -61,20 +68,6 @@
                             "name": "enableUncheckedValue",
                             "label": "Preserve Uncheck state value.",
                             "valueType": "boolean"
-                        },
-                        {
-                            "component": "text",
-                            "name": "uncheckedValue",
-                            "label": "When Unchecked, return value",
-                            "valueType": "string",
-                            "condition": {
-                                "===": [
-                                    {
-                                        "var": "basic|enableUncheckedValue"
-                                    },
-                                    true
-                                ]
-                            }
                         },
                         {
                             "component": "text",

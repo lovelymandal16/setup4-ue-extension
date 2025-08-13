@@ -9,7 +9,9 @@
             "resourceType": "core/fd/components/form/button/v1/button",
             "template": {
               "jcr:title": "Button",
-              "fieldType": "button"
+              "fieldType": "button",
+              "enabled": true,
+              "visible": true
             }
           }
         }
@@ -20,6 +22,11 @@
     {
       "id": "form-button",
       "fields": [
+        {
+          "component": "container",
+          "name": "component-name",
+          "label": "Button"
+        },
         {
           "component": "container",
           "name": "basic",

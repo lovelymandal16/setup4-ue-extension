@@ -60,6 +60,11 @@
     "id": "button",
     "fields": [
       {
+        "component": "container",
+        "name": "component-name",
+        "label": "Button"
+      },
+      {
         "component": "aem-content",
         "name": "link",
         "label": "Link"
@@ -365,6 +370,11 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "Button"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
@@ -485,6 +495,11 @@
   {
     "id": "checkbox-group",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Checkbox Group"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -646,19 +661,18 @@
             "label": "Data type of submitted value",
             "name": "type",
             "valueType": "string",
-            "value": "string[]",
             "options": [
               {
                 "name": "String",
-                "value": "string[]"
+                "value": "string"
               },
               {
                 "name": "Boolean",
-                "value": "boolean[]"
+                "value": "boolean"
               },
               {
                 "name": "Number",
-                "value": "number[]"
+                "value": "number"
               }
             ]
           },
@@ -734,6 +748,11 @@
   {
     "id": "checkbox",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Checkbox"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -887,20 +906,6 @@
           },
           {
             "component": "text",
-            "name": "uncheckedValue",
-            "label": "When Unchecked, return value",
-            "valueType": "string",
-            "condition": {
-              "===": [
-                {
-                  "var": "basic|enableUncheckedValue"
-                },
-                true
-              ]
-            }
-          },
-          {
-            "component": "text",
             "name": "default",
             "label": "Default Value",
             "valueType": "string"
@@ -960,6 +965,11 @@
   {
     "id": "date-input",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Date Input"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -1084,12 +1094,6 @@
             "name": "placeholder",
             "label": "Placeholder text",
             "valueType": "string"
-          },
-          {
-            "component": "date-time",
-            "name": "default",
-            "label": "Default Value",
-            "valueType": "date"
           }
         ]
       },
@@ -1216,6 +1220,11 @@
   {
     "id": "drop-down",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Drop Down List"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -1361,7 +1370,6 @@
             "label": "Data type of submitted value",
             "name": "type",
             "valueType": "string",
-            "value": "number",
             "options": [
               {
                 "name": "String",
@@ -1438,6 +1446,11 @@
   {
     "id": "email",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Email Input"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -1561,12 +1574,6 @@
             "component": "text",
             "name": "placeholder",
             "label": "Placeholder text",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "name": "default",
-            "label": "Default Value",
             "valueType": "string"
           }
         ]
@@ -1668,6 +1675,11 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "File Attachment"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
@@ -1788,18 +1800,6 @@
         ]
       },
       {
-        "component": "text",
-        "name": "buttonText",
-        "label": "Button Title",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "dragDropText",
-        "label": "Drag Drop Text",
-        "valueType": "string"
-      },
-      {
         "component": "container",
         "name": "help",
         "label": "Help Content",
@@ -1846,6 +1846,13 @@
             "description": "Displayed when validation script fails."
           },
           {
+            "component": "text",
+            "name": "validateExpMessage",
+            "label": "Script validation message",
+            "valueType": "string",
+            "description": "Displayed when validation script fails."
+          },
+          {
             "component": "number",
             "name": "maxFileSize",
             "label": "Maximum file size (MB)",
@@ -1877,6 +1884,11 @@
   {
     "id": "form-fragment",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Fragment"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -2000,16 +2012,7 @@
             "component": "aem-content",
             "name": "fragmentPath",
             "label": "Fragment reference",
-            "valueType": "string",
-            "validation": {
-              "rootPath": "/content/forms/af"
-            }
-          },
-          {
-            "component": "edit-fragment",
-            "name": "editFragment",
-            "label": "Edit Fragment",
-            "valueType": "boolean"
+            "valueType": "string"
           }
         ]
       },
@@ -2168,6 +2171,11 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "Multiline Input"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
@@ -2289,12 +2297,6 @@
             "component": "text",
             "name": "placeholder",
             "label": "Placeholder text",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "name": "default",
-            "label": "Default Value",
             "valueType": "string"
           },
           {
@@ -2326,80 +2328,83 @@
         ]
       },
       {
+        "0": {
+          "component": "boolean",
+          "name": "required",
+          "label": "Required",
+          "valueType": "boolean"
+        },
+        "1": {
+          "component": "text",
+          "name": "mandatoryMessage",
+          "label": "Error message",
+          "valueType": "string",
+          "description": "Error message shown when required field is left empty."
+        },
+        "2": {
+          "component": "text",
+          "name": "validateExpMessage",
+          "label": "Script validation message",
+          "valueType": "string",
+          "description": "Displayed when validation script fails."
+        },
+        "3": {
+          "component": "number",
+          "name": "minLength",
+          "label": "Minimum number of characters",
+          "valueType": "number",
+          "description": "Minimum length of the text in the field"
+        },
+        "4": {
+          "component": "text",
+          "name": "minLengthMessage",
+          "valueType": "string",
+          "label": "Minimum characters error message",
+          "description": "Error message shown when less than minimum characters are entered."
+        },
+        "5": {
+          "component": "number",
+          "name": "maxLength",
+          "label": "Maximum number of characters",
+          "valueType": "number",
+          "description": "Maximum length of the text in the field"
+        },
+        "6": {
+          "component": "text",
+          "name": "maxLengthMessage",
+          "valueType": "string",
+          "label": "Maximum characters error message",
+          "description": "Error message shown when more than maximum characters are entered."
+        },
+        "7": {
+          "component": "text",
+          "name": "pattern",
+          "valueType": "string",
+          "label": "Pattern",
+          "description": "Regular Expression is permitted."
+        },
+        "8": {
+          "component": "text",
+          "name": "validatePictureClauseMessage",
+          "valueType": "string",
+          "label": "Pattern Error message",
+          "description": "Error message shown when the pattern is not matched."
+        },
         "component": "container",
         "name": "validation",
         "label": "Validation",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "boolean",
-            "name": "required",
-            "label": "Required",
-            "valueType": "boolean"
-          },
-          {
-            "component": "text",
-            "name": "mandatoryMessage",
-            "label": "Error message",
-            "valueType": "string",
-            "description": "Error message shown when required field is left empty."
-          },
-          {
-            "component": "text",
-            "name": "validateExpMessage",
-            "label": "Script validation message",
-            "valueType": "string",
-            "description": "Displayed when validation script fails."
-          },
-          {
-            "component": "number",
-            "name": "minLength",
-            "label": "Minimum number of characters",
-            "valueType": "number",
-            "description": "Minimum length of the text in the field"
-          },
-          {
-            "component": "text",
-            "name": "minLengthMessage",
-            "valueType": "string",
-            "label": "Minimum characters error message",
-            "description": "Error message shown when less than minimum characters are entered."
-          },
-          {
-            "component": "number",
-            "name": "maxLength",
-            "label": "Maximum number of characters",
-            "valueType": "number",
-            "description": "Maximum length of the text in the field"
-          },
-          {
-            "component": "text",
-            "name": "maxLengthMessage",
-            "valueType": "string",
-            "label": "Maximum characters error message",
-            "description": "Error message shown when more than maximum characters are entered."
-          },
-          {
-            "component": "text",
-            "name": "pattern",
-            "valueType": "string",
-            "label": "Pattern",
-            "description": "Regular Expression is permitted."
-          },
-          {
-            "component": "text",
-            "name": "validatePictureClauseMessage",
-            "valueType": "string",
-            "label": "Pattern Error message",
-            "description": "Error message shown when the pattern is not matched."
-          }
-        ]
+        "collapsible": true
       }
     ]
   },
   {
     "id": "number-input",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Number Input"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -2524,12 +2529,6 @@
             "name": "placeholder",
             "label": "Placeholder text",
             "valueType": "string"
-          },
-          {
-            "component": "number",
-            "name": "default",
-            "label": "Default Value",
-            "valueType": "number"
           },
           {
             "component": "select",
@@ -2647,7 +2646,7 @@
               },
               {
                 "name": "$1234.21",
-                "value": "¤####0.00"
+                "value": "()¤####0.00"
               },
               {
                 "name": "1,234.210",
@@ -2666,6 +2665,11 @@
   {
     "id": "panel",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Panel"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -2804,41 +2808,20 @@
             "name": "minOccur",
             "label": "Minimum repetitions",
             "valueType": "number",
-            "description": "Minimum number of times the panel appears on the form",
-            "condition": {
-              "===": [
-                {
-                  "var": "repeat|repeatable"
-                },
-                true
-              ]
-            }
+            "description": "Minimum number of times the panel appears on the form"
           },
           {
             "component": "number",
             "name": "maxOccur",
             "label": "Maximum repetitions",
             "valueType": "number",
-            "placeholder": "No Limit",
             "description": "Maximum number of times the panel can appear on the form. No value indicates no limit.",
             "condition": {
-              "and": [
+              "!=": [
                 {
-                  "===": [
-                    {
-                      "var": "repeat|repeatable"
-                    },
-                    true
-                  ]
+                  "var": "variant"
                 },
-                {
-                  "!==": [
-                    {
-                      "var": "repeat|variant"
-                    },
-                    "noButtons"
-                  ]
-                }
+                "noButtons"
               ]
             }
           },
@@ -2852,15 +2835,15 @@
                 "value": "noButtons"
               },
               {
-                "name": "Add & Delete Buttons",
-                "value": "addDeleteButtons"
+                "name": "Add & Remove Buttons",
+                "value": "addRemoveButtons"
               }
             ],
-            "value": "addDeleteButtons",
+            "value": "addRemoveButtons",
             "condition": {
               "===": [
                 {
-                  "var": "repeat|repeatable"
+                  "var": "repeatable"
                 },
                 true
               ]
@@ -2877,15 +2860,15 @@
                 {
                   "===": [
                     {
-                      "var": "repeat|variant"
+                      "var": "variant"
                     },
-                    "addDeleteButtons"
+                    "addRemoveButtons"
                   ]
                 },
                 {
                   "===": [
                     {
-                      "var": "repeat|repeatable"
+                      "var": "repeatable"
                     },
                     true
                   ]
@@ -2904,15 +2887,15 @@
                 {
                   "===": [
                     {
-                      "var": "repeat|variant"
+                      "var": "variant"
                     },
-                    "addDeleteButtons"
+                    "addRemoveButtons"
                   ]
                 },
                 {
                   "===": [
                     {
-                      "var": "repeat|repeatable"
+                      "var": "repeatable"
                     },
                     true
                   ]
@@ -2947,6 +2930,11 @@
   {
     "id": "radio-group",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name",
+        "label": "Radio Group"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -3208,6 +3196,11 @@
     "id": "form-reset-button",
     "fields": [
       {
+        "component": "panel",
+        "name": "component-name",
+        "label": "Reset Button"
+      },
+      {
         "component": "container",
         "name": "basic",
         "label": "Basic",
@@ -3329,6 +3322,11 @@
   {
     "id": "form-submit-button",
     "fields": [
+      {
+        "component": "panel",
+        "name": "component-name",
+        "label": "Submit Button"
+      },
       {
         "component": "container",
         "name": "basic",
@@ -3453,6 +3451,11 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "Telephone Input"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
@@ -3574,12 +3577,6 @@
             "component": "text",
             "name": "placeholder",
             "label": "Placeholder text",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "name": "default",
-            "label": "Default Value",
             "valueType": "string"
           }
         ]
@@ -3667,6 +3664,11 @@
     "fields": [
       {
         "component": "container",
+        "name": "component-name",
+        "label": "Text Input"
+      },
+      {
+        "component": "container",
         "name": "basic",
         "label": "Basic",
         "collapsible": false,
@@ -3788,12 +3790,6 @@
             "component": "text",
             "name": "placeholder",
             "label": "Placeholder text",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "name": "default",
-            "label": "Default Value",
             "valueType": "string"
           },
           {
@@ -3900,17 +3896,16 @@
     "id": "plain-text",
     "fields": [
       {
+        "component": "container",
+        "name": "component-name",
+        "label": "Text"
+      },
+      {
         "component": "text",
         "name": "name",
         "label": "Name",
         "valueType": "string",
         "required": true
-      },
-      {
-        "component": "text",
-        "name": "dataRef",
-        "label": "Bind reference",
-        "valueType": "string"
       },
       {
         "component": "boolean",
@@ -3922,9 +3917,8 @@
       {
         "component": "select",
         "name": "colspan",
-        "label": "Column Span",
+        "label": "Columns",
         "valueType": "string",
-        "value": "12",
         "options": [
           {
             "name": "1 column",

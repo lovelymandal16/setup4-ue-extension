@@ -10,7 +10,8 @@
                         "template": {
                             "jcr:title": "Panel",
                             "fieldType": "panel",
-                            "minOccur": 1
+                            "enabled": true,
+                            "visible": true
                         }
                     }
                 }
@@ -21,6 +22,11 @@
         {
             "id": "panel",
             "fields": [
+                {
+                    "component": "container",
+                    "name": "component-name",
+                    "label": "Panel"
+                },
                 {
                     "component": "container",
                     "name": "basic",
@@ -45,41 +51,20 @@
                             "name": "minOccur",
                             "label": "Minimum repetitions",
                             "valueType": "number",
-                            "description": "Minimum number of times the panel appears on the form",
-                            "condition": {
-                                "===": [
-                                    {
-                                        "var": "repeat|repeatable"
-                                    },
-                                    true
-                                ]
-                            }
+                            "description": "Minimum number of times the panel appears on the form"
                         },
                         {
                             "component": "number",
                             "name": "maxOccur",
                             "label": "Maximum repetitions",
                             "valueType": "number",
-                            "placeholder": "No Limit",
                             "description": "Maximum number of times the panel can appear on the form. No value indicates no limit.",
                             "condition": {
-                                "and": [
+                                "!=": [
                                     {
-                                        "===": [
-                                            {
-                                                "var": "repeat|repeatable"
-                                            },
-                                            true
-                                        ]
+                                        "var": "variant"
                                     },
-                                    {
-                                        "!==": [
-                                            {
-                                                "var": "repeat|variant"
-                                            },
-                                            "noButtons"
-                                        ]
-                                    }
+                                    "noButtons"
                                 ]
                             }
                         },
@@ -93,12 +78,12 @@
                                     "value": "noButtons"
                                 },
                                 {
-                                    "name": "Add & Delete Buttons",
-                                    "value": "addDeleteButtons"
+                                    "name": "Add & Remove Buttons",
+                                    "value": "addRemoveButtons"
                                 }
                             ],
-                            "value": "addDeleteButtons",
-                            "condition": { "===": [{"var": "repeat|repeatable"}, true] }
+                            "value": "addRemoveButtons",
+                            "condition": { "===": [{"var" : "repeatable"}, true] }
                         },
                         {
                             "component": "text",
@@ -111,15 +96,15 @@
                                     {
                                         "===": [
                                             {
-                                                "var": "repeat|variant"
+                                                "var": "variant"
                                             },
-                                            "addDeleteButtons"
+                                            "addRemoveButtons"
                                         ]
                                     },
                                     {
                                         "===": [
                                             {
-                                                "var": "repeat|repeatable"
+                                                "var": "repeatable"
                                             },
                                             true
                                         ]
@@ -138,15 +123,15 @@
                                     {
                                         "===": [
                                             {
-                                                "var": "repeat|variant"
+                                                "var": "variant"
                                             },
-                                            "addDeleteButtons"
+                                            "addRemoveButtons"
                                         ]
                                     },
                                     {
                                         "===": [
                                             {
-                                                "var": "repeat|repeatable"
+                                                "var": "repeatable"
                                             },
                                             true
                                         ]
