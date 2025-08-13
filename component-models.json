@@ -3547,7 +3547,7 @@
           {
             "component": "text",
             "name": "name",
-            "label": "Name lovely",
+            "label": "Name",
             "valueType": "string",
             "required": true,
             "valueFormat": "regexp",

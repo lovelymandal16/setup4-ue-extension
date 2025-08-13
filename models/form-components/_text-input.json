@@ -23,6 +23,13 @@
             "id": "text-input",
             "fields": [
                 {
+                    "component": "text",
+                    "name": "name",
+                    "label": "Text Input",
+                    "valueType": "string",
+                    "required": true
+                },
+                {
                     "component": "container",
                     "name": "basic",
                     "label": "Basic",
