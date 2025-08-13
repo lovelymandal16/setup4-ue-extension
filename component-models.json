@@ -2309,14 +2309,6 @@
           {
             "component": "text",
             "name": "name",
-            "label": "Component Name",
-            "valueType": "string",
-            "value": "Number Input",
-            "editable": false
-          },
-          {
-            "component": "text",
-            "name": "name",
             "label": "Name",
             "valueType": "string",
             "required": true,
@@ -3335,8 +3327,8 @@
     "fields": [
       {
         "component": "container",
-        "name": "basictele",
-        "label": "Basic : Telephone Input",
+        "name": "basic",
+        "label": "Telephone Input: Basic",
         "collapsible": false,
         "fields": [
           {
@@ -3547,7 +3539,7 @@
     "id": "text-input",
     "fields": [
       {
-        "component": "container",
+        "component": "panel",
         "name": "component-name",
         "label": "Text Input"
       },

@@ -25,7 +25,7 @@
         {
           "component": "container",
           "name": "basic",
-          "label": "Basic",
+          "label": "Telephone Input: Basic",
           "collapsible": false,
           "...": "../form-common/_basic-input-placeholder-fields.json"
         },
