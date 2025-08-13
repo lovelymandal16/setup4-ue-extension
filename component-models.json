@@ -2308,6 +2308,13 @@
         "fields": [
           {
             "component": "text",
+            "name": "component-name",
+            "label": "Component Name",
+            "valueType": "string",
+            "value": "Number Input"
+          },
+          {
+            "component": "text",
             "name": "name",
             "label": "Name",
             "valueType": "string",
@@ -3325,6 +3332,11 @@
   {
     "id": "telephone-input",
     "fields": [
+      {
+        "component": "container",
+        "name": "component-name-container",
+        "label": "Telephone Input"
+      },
       {
         "component": "container",
         "name": "basic",
