@@ -3571,7 +3571,7 @@
           {
             "component": "text",
             "name": "dataRef",
-            "label": "Bind reference lovely",
+            "label": "Bind reference",
             "valueType": "string"
           },
           {
