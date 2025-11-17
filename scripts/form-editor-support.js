@@ -347,7 +347,23 @@ export function attachEventListners(main) {
   }
   document.body.addEventListener('aue:ui-edit', ueEditModeHandler);
 }
+function enableAuthoringAssistantExtension() {
+  const meta = document.createElement('meta');
+  meta.name = 'urn:adobe:aue:config:extensions';
 
+ if (window.location.href.includes('cmstg')==true){
+   meta.content =   'https://experience.adobe.com/solutions/livecycle-af-extensions/resources/dor-generate?livecycle-af-extensions_version=PR-22-5333d4ffb6dfe70725f6c7c4e60fc8110c7ee13c&shell_domain=author.adobeaemcloud.com';
+ }
+ else{
+  meta.content =   'https://experience.adobe.com/solutions/livecycle-forms-spa/static-assets/resources/universal_editor.html?livecycle-forms-spa_version=PR-587-e6aec704015a57cd02065b4a4085284a803382dd';
+   //meta.content =   'https://experience.adobe.com/solutions/livecycle-af-extensions/resources/dor-generate?livecycle-af-extensions_version=PR-22-5333d4ffb6dfe70725f6c7c4e60fc8110c7ee13c&shell_domain=author.adobeaemcloud.com';
+ }
+ 
+
+ console.log('Adding meta tag for aem forms authoring assistant extension:', meta.content);
+  document.head.appendChild(meta);
+}
+enableAuthoringAssistantExtension();
 const observer = new MutationObserver(instrumentForms);
 observer.observe(document, { childList: true, subtree: true, attributeFilter: ['form'] });
 loadCSS(`${window.hlx.codeBasePath}/scripts/form-editor-support.css`);
